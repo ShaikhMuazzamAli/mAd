@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  position: relative;
 }
 
 a {
@@ -307,6 +308,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #213b52;
   background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
 }
+/*#hero .container {
+  position: relative;
+ } */
 #hero h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
@@ -340,6 +344,14 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-img img {
     width: 50%;
   }
+  /*#hero .hero-img .image1{
+    /*position: relative;*/
+    /*z-index: 1;
+  }
+  /*#hero .hero-img .image2{
+    position: absolute;
+    z-index: 3;
+  }*/
 }
 @media (max-width: 768px) {
   #hero {
@@ -1084,11 +1096,18 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
+  background-size: cover;
   color: #fff;
   font-size: 14px;
   position: relative;
 }
-#footer::before {
+/* #footer :hover {
+  background: #9fb3c4;
+} 
+/* #footer .footer-top :hover {
+  background: #6c757d;
+} */
+#footer::before{
   content: "";
   position: absolute;
   left: 0;
