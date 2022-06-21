@@ -633,6 +633,11 @@ section {
 .features .content p:last-child {
   margin-bottom: 0;
 }
+.features .img-fluid {
+  width: 70%;
+  height: 600px; 
+
+}
 
 /*--------------------------------------------------------------
 # Portfolio
