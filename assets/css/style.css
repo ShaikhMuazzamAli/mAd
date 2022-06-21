@@ -302,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
+  height: 713px;
   padding: 0 0 0 0;
   background: #213b52;
   background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
@@ -513,7 +514,7 @@ section {
   margin-left: 60px;
 }
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/My_video.mp4") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
