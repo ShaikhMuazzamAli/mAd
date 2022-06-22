@@ -643,10 +643,10 @@ section {
   width: 70%;
   height: 600px; 
 } */
-.card-img-overlay .img-fluid {
-  height: 300px;
-  width: 40%;
-}
+/* .card-img-overlay .img-fluid {
+  height: 400px;
+  width: 50%;
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
