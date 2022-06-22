@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 713px;
+  height: 650px;
   padding: 0 0 0 0;
   background: #213b52;
   background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
@@ -372,10 +372,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  /* #hero .hero-img img {
     width: 80%;
-  }
+  } */
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -529,6 +530,11 @@ section {
   background: url("../img/My_video.mp4") center center no-repeat;
   background-size: cover;
   min-height: 400px;
+
+}
+.video {
+  height: auto;
+  width: 80%;
 }
 @media (max-width: 667px) {
   .about .image img {
@@ -633,10 +639,13 @@ section {
 .features .content p:last-child {
   margin-bottom: 0;
 }
-.features .img-fluid {
+/* .features .img-fluid {
   width: 70%;
   height: 600px; 
-
+} */
+.card-img-overlay .img-fluid {
+  height: 300px;
+  width: 40%;
 }
 
 /*--------------------------------------------------------------
