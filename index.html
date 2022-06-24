@@ -82,11 +82,18 @@
         <!-- <nav class="navbar-nav"> -->
           <div class="nav-link">
             <div class="switch">
-
               <!-- <input type="checkbox" class="custom-control-input" id="dark-switch">
               <label class="custom-control-label" for="dark-switch">Dark Switch</label> -->
             </div>
           </div>
+      <script>
+        $(document).ready(function(){
+        $('.switch').click(function(){
+          $('.switch').toggleClass('active');
+          $('body').toggleClass('night');
+          });
+        });
+      </script>
         <!--/nav-->
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -120,12 +127,6 @@
        <img src="assets/img/hero-img1.svg" class="img-fluid image1" alt="">
       </div> -->
 
-     
-         
-        
-          
-    
-        
       </div>
     </div>
     </div>
@@ -859,14 +860,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script>
-    $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.toggle').toggleClass('active');
-            $('body').toggleClass('night');
-        });
-    });
-  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
