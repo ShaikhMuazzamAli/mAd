@@ -26,7 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- =======================================================
   * Template Name: Bocor - v4.7.1
@@ -39,7 +39,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header>
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
@@ -91,6 +91,9 @@
         $('.switch').click(function(){
           $('.switch').toggleClass('active');
           $('body').toggleClass('night');
+          $('header').toggleClass('night');
+          $('#hero').toggleClass('night');
+          $('footer').toggleClass('night');
           });
         });
       </script>
