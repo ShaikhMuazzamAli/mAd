@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   border-radius: 20px;
   transition: 0.5s;
+  
 }
 .switch.active
 {
@@ -49,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 {
     content: '';
     position: absolute;
-    left: 2px;
+    left: -2px;
     width: 16px;
     height: 16px;
     background: #00151f;
@@ -63,22 +64,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 body.night {
     background-color: #00151f;
-    /* color: #fff; */
+     color: #fff; 
 }
 
-header.night {
+body.night .about .content .icon-box p{
   background-color: #00151f;
-    /* color: #fff; */
+   color: #fff; 
 }
+body.night .about .content h3 {
+   color: #9EBED8; 
+}
+/* body.night .about .content .icon-box h4 a {
+  color: #85AFD3;
+} */
+body.night .section-title h2 {
+  color: #9EBED8;
+}
+body.night .features .content h3 {
+  color: #9EBED8;
+}
+ header.night {
+  background-color: #00151f;
+     /* color: #fff;  */
+} 
 
 #hero.night {
   background-color: #00151f;
   /* color: #fff; */
 }
-footer.night {
-  background-color: #00151f;
-    /* color: #fff; */
+#hero.night h1 {
+  color: #fff;
 }
+#hero.night h2 {
+  color: #9EBED8;
+}
+body.night .contact .info-box {
+  background-color: #00151f;
+  color: #fff;
+  /* box-shadow: 0 0 5px rgba (214 215 216 / 30%); */
+}
+body.night .contact .php-email-form {
+  background-color: #00151f;
+}
+body.night .form-control {
+  background-color: #00151f;
+  color: #fff;
+}
+body.night a {
+  color: #fff;
+}
+.label {
+  
+}
+/* footer.night {
+  background-color: #00151f;
+    color: #fff;
+} */
 /* body.night #header, #hero, .section-bg {
   color: black !important;
 } */
@@ -1072,11 +1113,11 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: #2A2626;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 3px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
-  background: #fff;
+  background: #FFFFFF;
 }
 .contact .info-box i {
   font-size: 32px;
@@ -1098,10 +1139,10 @@ section {
   margin-bottom: 0;
 }
 a {
-  color: #777777;
+  color: #2A2626;
 }
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 3px rgba(214, 215, 216, 0.6);
   padding: 40px;
   background: #fff;
 }
