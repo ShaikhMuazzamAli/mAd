@@ -91,12 +91,17 @@
           </div> -->
         </ul>
 
+        <select class="langwrap">
+          <option value="EN">English</option>
+          <option value="HIN">Hindi</option>
+          <option value="MA">Marathi</option>
+        </select>
+
         <div>
          <a href="#" data-toggle="tooltip" data-placement="top" id="link" title="Night-Mode">
           <ion-icon name="moon-outline" class="switch"></ion-icon>
          </a>
         </div>
-
 
 
         <!-- <div>
@@ -930,7 +935,41 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
-</body>
+  <script src="assets/js/translate.js"></script>
+  <script src="assets/js/script.js"></script>
 
+  <!-- <script>
+		const langEl = document.querySelector('.langwrap');
+		const select = document.querySelectorAll('.select');
+		const navbarEl = document.querySelector('.navbar');
+    // const getstartedEl = document.querySelector('.getstarted');
+		// const heroEl = document.querySelector('.hero');
+		// const aboutEl = document.querySelector('.about');
+		// const featuresEl = document.querySelector('.features');
+		// const contactEl = document.querySelector('.contact');
+		// const footerEl = document.querySelector('.footer');
+		// const descrEl = document.querySelector('.description');
+
+    console.log(select)
+
+		select.forEach(el => {
+			el.addEventListener('click', () => {
+				langEl.querySelector('.active').classList.remove('active');
+				el.classList.add('active');
+
+				const attr = el.getAttribute('language');
+
+				navbarEl.textContent = data[attr].navbar;
+        // getstartedEl.textContent = data[attr].getstarted;
+				// heroEl.textContent = data[attr].hero;
+				// aboutEl.textContent = data[attr].about;
+				// featuresEl.textContent = data[attr].features;
+				// contactEl.textContent = data[attr].contact;
+				// footerEl.textContent = data[attr].footer;
+				// descrEl.textContent = data[attr].description;
+			});
+		});
+</script> -->
+
+  </body>
 </html>

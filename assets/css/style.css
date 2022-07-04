@@ -120,6 +120,19 @@ body.night a {
   right: -20px;
   cursor: pointer;
 }
+select {
+  margin-left: 30px;
+  background-color: #213b52;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+body.night select {
+  background-color: #00151f;
+}
+select.active {
+  background-color: red;
+}
  /*#s-icon {
   font-size: 23px;
   color: rgb(255, 255, 1);
