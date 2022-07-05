@@ -58,9 +58,9 @@
           
         </a-->
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="navbar1 nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="navbar2 nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="navbar3 nav-link scrollto" href="#features">Features</a></li>
           <!--li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li-->
           <!--li><a class="nav-link scrollto" href="#team">Team</a></li-->
           <!--li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -80,8 +80,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li-->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get App</a></li>
+          <li><a class="navbar4 nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted1 getstarted scrollto" href="#about">Get App</a></li>
           
           <!-- <div class="nav-link">
             <div class="switch">
@@ -91,11 +91,19 @@
           </div> -->
         </ul>
 
-        <select class="langwrap">
+        <!-- <select class="langwrap">
           <option value="EN">English</option>
           <option value="HIN">Hindi</option>
           <option value="MA">Marathi</option>
-        </select>
+        </select> -->
+
+        
+          <div class="langWrap">
+            <a href="#" language='English' class="active">EN</a>
+            <a href="#" language='Hindi'>HIN</a>
+            <a href="#" language='Marathi'>MA</a>
+          </div>
+        
 
         <div>
          <a href="#" data-toggle="tooltip" data-placement="top" id="link" title="Night-Mode">
@@ -131,9 +139,9 @@
                 $('.switch').attr('name', 'moon-outline')
               }
              });
-                $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-              });
+              //   $(document).ready(function(){
+              //   $('[data-toggle="tooltip"]').tooltip();
+              // });
             </script>
             
         
@@ -179,9 +187,9 @@
     <div class="container pt-3">
       <div class="row d-flex align-items-center pt-5">
       <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1>Employee's digital experience with mAd</h1>
-        <h2>mAd automates employee experience under one platform with ease.</h2>
-        <a href="#about" class="btn-get-started scrollto">Get App</a>
+        <h1 class="hero1">Employee's digital experience with mAd</h1>
+        <h2 class="hero2">mAd automates employee experience under one platform with ease.</h2>
+        <a href="#about" class="getstarted2 btn-get-started scrollto">Get App</a>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
 
@@ -266,30 +274,31 @@
           </div>
           <div class="col-xl-7">
             <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
-              <h3 data-aos="fade-in" data-aos-delay="100">Voluptatem dignissimos provident quasi</h3>
-              <p data-aos="fade-in">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              <h3 data-aos="fade-in" data-aos-delay="100" class="about1">mAd - my Attendence daily<!--Voluptatem dignissimos provident quasi--></h3>
+              <p data-aos="fade-in" class="about2">
+                mAd is a free, easy-to-use application to manage your Staff Attendance with employee tracking and time clock app with working hours... 
+                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit -->
               </p>
               <div class="row gy-4 mt-3">
                 <div class="col-md-6 icon-box" data-aos="fade-up">
                   <i class="bx bx-receipt"></i>
-                  <h4><a href="#">Corporis voluptates sit</a></h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4><a href="#" class="about3">Registration<!--Corporis voluptates sit--></a></h4>
+                  <p class="about4">Employee/User have to first register himself on it<!--Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip--></p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-cube-alt"></i>
-                  <h4><a href="#">Ullamco laboris nisi</a></h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4><a href="#" class="about5">Statistics<!--Ullamco laboris nisi--></a></h4>
+                  <p class="about6">Statistics is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.<!--Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt--></p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-images"></i>
-                  <h4><a href="#">Labore consequatur</a></h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4><a href="#" class="about7">Users List<!--Labore consequatur--></a></h4>
+                  <p class="about8">This method returns a list of all users in the workspace. This includes deleted/deactivated users.<!--Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere--></p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-shield"></i>
-                  <h4><a href="#">User Safety</a></h4>
-                  <p>All user data is safe. None of the data is used/ shared among any third party links. </p>
+                  <h4><a href="#" class="about9">User Safety</a></h4>
+                  <p class="about10">All user data is safe. None of the data is used/ shared among any third party links.</p>
                 </div>
               </div>
             </div><!-- End .content-->
@@ -368,8 +377,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in">Features</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2 data-aos="fade-in" class="features">Features</h2>
+          <p data-aos="fade-in" class="features1">Manage employee leave & attendance at one place with our free software.Keep a tab on employees working outside the office with geotracking and geofencing.Mobile based attendance software for Contractual and Distributed staff<!--Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.--></p>
         </div>
 
         <div class="row content">
@@ -378,8 +387,8 @@
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left">
             <!--h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3-->
-            <h3>Membership</h3>
-            <p class="fst-italic">
+            <h3 class="features2">Membership</h3>
+            <p class="features3 fst-italic">
               In Membership feature user will get two options, Trail & Premium.
               <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.-->
@@ -387,8 +396,8 @@
             <ul>
               <!--li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li-->
-                <li><i class="bi bi-check"></i>In 'Trail', user will get 30 days Trail activated on the application.</li>
-                <li><i class="bi bi-check"></i>with 'Premium', user will get to experience all features Hands-on.</li>
+                <li><i class="features4 bi bi-check"></i>In 'Trail', user will get 30 days Trail activated on the application.</li>
+                <li><i class="features5 bi bi-check"></i>with 'Premium', user will get to experience all features Hands-on.</li>
             </ul>
           </div>
         </div>
@@ -398,16 +407,17 @@
             <img src="assets/img/f2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3 class="features6"><!--Corporis temporibus maiores provident-->Records</h3>
+            <p class="features7 fst-italic">
+              a record of how often someone has been present somewhere, for example at work: good/poor attendance record Do not underestimate the importance of having a good attendance record. It is one of the performance indicators that managers look at first.
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. -->
             </p>
-            <p>
+            <!-- <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -416,12 +426,13 @@
             <img src="assets/img/f3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            <h3 class="features8">Profile<!--Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas--></h3>
+            <p class="features9">After you select Attendance from the Standard Profiles landing page, the Attendance Profiles list page opens. This page is a grid that displays the current Attendance Profiles and the attributes of each profile. To modify the attribute headings, click  and select or clear the listed options.
+              <!--Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.--></p>
+           <ul>
+              <li><i class="features10 bi bi-check"></i> To create an Attendance Profile, click Add .<!--Ullamco laboris nisi ut aliquip ex ea commodo consequat.--></li>
+              <li><i class="features11 bi bi-check"></i> To edit an Attendance Profile, select a profile from the list and click Edit.<!--Duis aute irure dolor in reprehenderit in voluptate velit.--></li>
+              <li><i class="features12 bi bi-check"></i> To export the list page to an Excel .csv file, click Export  , then select the .csv link at the bottom of the page.<!--Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.--></li>
             </ul>
           </div>
         </div>
@@ -431,16 +442,17 @@
             <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3 class="features13">Mark Attendence<!--Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in--></Quas></h3>
+            <p class="features14 fst-italic">
+              Real-Time Field Force Tracking, Simplified Data Management, Easy to Create & View Reports. Meet Your Company's Attendance Requirements with the Best Attendance Management Software. Easy Report Management. Expense Reimbursement.
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. -->
             </p>
-            <p>
+            <!-- <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -803,8 +815,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <h3>If any Queries, you can reach us on the Following...</h3>
+          <h2 class="contact">Contact</h2>
+          <h3 class="contact1">If any Queries, you can reach us on the Following...</h3>
         </div>
 
         <div class="row">
@@ -815,21 +827,21 @@
               <div class="col-md-12">
                 <div class="info-box" data-aos="fade-up">
                   <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>LT, N 1/A, 39/2, SECTOR 10, Dr B R Ambedkar Marg, Nerul West, Navi Mumbai, Maharashtra 400706</p>
+                  <h3 class="contact2">Our Address</h3>
+                  <p class="contact3">LT, N 1/A, 39/2, SECTOR 10, Dr B R Ambedkar Marg, Nerul West, Navi Mumbai, Maharashtra 400706</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
+                  <h3 class="contact4">Email Us</h3>
                   <p><a href="https://accounts.google.com/b/1/AddMailService" class="email" target="_blank">contact.youthtechnology@gmail.com</a></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
+                  <h3 class="contact5">Call Us</h3>
                   <p>+91 8080 2277 27<!--br>+1 6678 254445 41--></p>
                 </div>
               </div>
@@ -841,24 +853,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100" data-aos="fade-up">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="contact6 form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="contact7 form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="contact8 form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="contact9 form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button class="contact10" type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -884,7 +896,7 @@
           <div class="col-lg-6">
             <!--h3>mAd</h3-->
             <img src="assets/img/madicon.png" class="img-fluid" alt="" height="200" width="200">
-            <h3 class="pt-3" style="font-family: times new roman;">my Attendence daily</h3>
+            <h3 class="footer1 pt-3" style="font-family: times new roman;">my Attendence daily</h3>
            <!--p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p-->
           </div>
         </div>
@@ -892,7 +904,7 @@
         <div class="row footer-newsletter justify-content-center">
           <div class="col-lg-6">
             <form action="" method="post">
-              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+              <input class="footer3" type="email" name="email" placeholder="Enter your Email"><input class="footer4" type="submit" value="Subscribe">
             </form>
           </div>
         </div>
@@ -909,7 +921,7 @@
     </div>
 
     <div class="container footer-bottom clearfix">
-      <div class="copyright">
+      <div class="footer2 copyright">
         &copy; Copyright <strong><span>YouthTechnology</span></strong>. All Rights Reserved-2022
       </div>
       <div class="credits">

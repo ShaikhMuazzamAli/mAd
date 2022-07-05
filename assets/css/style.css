@@ -120,19 +120,28 @@ body.night a {
   right: -20px;
   cursor: pointer;
 }
-select {
+body.night .langWrap {
+  background-color: #00151f;
+}
+.langWrap{
+  background: #213b52;
+}
+.langWrap .active{
+  background: #f21313;
+}
+/* select {
   margin-left: 30px;
   background-color: #213b52;
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
-}
-body.night select {
+} */
+/* body.night select {
   background-color: #00151f;
-}
-select.active {
+} */
+/* select.active {
   background-color: red;
-}
+} */
  /*#s-icon {
   font-size: 23px;
   color: rgb(255, 255, 1);
