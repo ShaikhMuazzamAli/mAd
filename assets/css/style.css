@@ -120,7 +120,26 @@ body.night a {
   right: -20px;
   cursor: pointer;
 }
-body.night .langWrap {
+body.night .getstarted {
+  background-color: #00151f;
+}
+.btn {
+  background: #213b52;
+}
+body.night .btn {
+  background-color: #00151f;
+}
+.dropdown-menu {
+  background: #213b52;
+}
+body.night .dropdown-menu {
+  background-color: #00151f;
+}
+.dropdown-menu a:hover {
+  color: #18d26e;
+  text-decoration: none;
+}
+/* body.night .langWrap {
   background-color: #00151f;
 }
 .langWrap{
@@ -128,7 +147,7 @@ body.night .langWrap {
 }
 .langWrap .active{
   background: #f21313;
-}
+} */
 /* select {
   margin-left: 30px;
   background-color: #213b52;

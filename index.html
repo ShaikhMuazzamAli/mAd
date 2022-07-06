@@ -14,9 +14,12 @@
   <!--link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,7 +33,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- =======================================================
   * Template Name: Bocor - v4.7.1
@@ -79,10 +84,19 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li-->
+          </li>-->
           <li><a class="navbar4 nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted1 getstarted scrollto" href="#about">Get App</a></li>
-          
+
+          <!-- <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              dropdown</a>
+              <div class="langWrap" id="navbardrop">
+                <a href="#" language='English' class="active">EN</a>
+                <a href="#" language='Hindi'>HIN</a>
+                <a href="#" language='Marathi'>MA</a>
+              </div>
+          </li> -->
           <!-- <div class="nav-link">
             <div class="switch">
               <span class="material-symbols-outlined" id="m-icon">dark_mode</span>
@@ -97,18 +111,40 @@
           <option value="MA">Marathi</option>
         </select> -->
 
-        
-          <div class="langWrap">
-            <a href="#" language='English' class="active">EN</a>
-            <a href="#" language='Hindi'>HIN</a>
-            <a href="#" language='Marathi'>MA</a>
+        <!-- <div class="ui compact selection dropdown">
+          <i class="dropdown icon"></i>
+          <div class="text">Compact</div>
+          <div class="menu">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
           </div>
-        
+        </div> -->
 
+
+        <!-- language change [[[[[[[[[[[[[[[[[[ ]]]]]]]]]]]]]]]]]] -->
+        <!-- <div class="dropdown langWrap">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Change Language
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item active" href="#" language='English'>English</a>
+            <a class="dropdown-item" href="#" language='Hindi'>Hindi</a>
+            <a class="dropdown-item" href="#" language='Marathi'>Marathi</a>
+            
+          </div>
+        </div> -->
+        <!-- <select>
+          <option value="EN">ENGLISH</option>
+          <option value="actual value 2">HINDI</option>
+          <option value="actual value 3">MARATHI</option>
+        </select> -->
+
+        <!-- theme  [[[[[[[[[[[[[[[[[[ [[[ ]]]]]]]]]]]]]]]]]]]]] -->
         <div>
-         <a href="#" data-toggle="tooltip" data-placement="top" id="link" title="Night-Mode">
-          <ion-icon name="moon-outline" class="switch"></ion-icon>
-         </a>
+          <a href="#" data-toggle="tooltip" data-placement="top" id="link" title="Night-Mode">
+            <ion-icon name="moon-outline" class="switch"></ion-icon>
+          </a>
         </div>
 
 
@@ -128,40 +164,40 @@
         </script> -->
 
         <script>
-           $('.switch').click(function(){
-             $('body').toggleClass('night');
-             $('header').toggleClass('night');
-             $('#hero').toggleClass('night');
+          $('.switch').click(function () {
+            $('body').toggleClass('night');
+            $('header').toggleClass('night');
+            $('#hero').toggleClass('night');
             //  $('#link').attr('title', 'sunny-outline')
-             if($('body').hasClass('night')){
-                $('.switch').attr('name', 'sunny-outline')
-              } else{
-                $('.switch').attr('name', 'moon-outline')
-              }
-             });
+            if ($('body').hasClass('night')) {
+              $('.switch').attr('name', 'sunny-outline')
+            } else {
+              $('.switch').attr('name', 'moon-outline')
+            }
+          });
               //   $(document).ready(function(){
               //   $('[data-toggle="tooltip"]').tooltip();
               // });
-            </script>
-            
-        
+        </script>
+
+
 
 
 
 
         <!-- <nav class="navbar-nav"> -->
-          <!-- <div class="nav-link">
+        <!-- <div class="nav-link">
             <div class="switch"> -->
-              <!-- <i class="fa fa-sun-o" aria-hidden="true"></i>
+        <!-- <i class="fa fa-sun-o" aria-hidden="true"></i>
               <i class="fa fa-moon-o" aria-hidden="true"></i>
               <div class="ball"></div> -->
-              <!-- <span class="material-symbols-outlined" id="m-icon">dark_mode</span>
+        <!-- <span class="material-symbols-outlined" id="m-icon">dark_mode</span>
               <span class="material-symbols-outlined" id="s-icon">light_mode</span> -->
-              <!-- <input type="checkbox" class="custom-control-input" id="dark-switch">
+        <!-- <input type="checkbox" class="custom-control-input" id="dark-switch">
               <label class="custom-control-label" for="dark-switch">Dark Switch</label> -->
-            <!-- </div>
+        <!-- </div>
           </div> -->
-      <!-- <script>
+        <!-- <script>
         $(document).ready(function(){
         $('.switch').click(function(){
           $('.switch').toggleClass('active');
@@ -186,14 +222,14 @@
 
     <div class="container pt-3">
       <div class="row d-flex align-items-center pt-5">
-      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1 class="hero1">Employee's digital experience with mAd</h1>
-        <h2 class="hero2">mAd automates employee experience under one platform with ease.</h2>
-        <a href="#about" class="getstarted2 btn-get-started scrollto">Get App</a>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+          <h1 class="hero1 appTitle">Employee's digital experience with mAd</h1>
+          <h2 class="hero2 appDesc">mAd automates employee experience under one platform with ease.</h2>
+          <a href="#about" class="getstarted2 btn-get-started scrollto">Get App</a>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
 
-        <!--div class="" style="width:500px"-->
+          <!--div class="" style="width:500px"-->
           <img class="img-fluid" src="assets/img/img1.svg" alt="Card image">
           <!--div class="card-img-overlay">
             <div class="text-center">
@@ -202,13 +238,13 @@
           </div>
         </div-->
 
-      <!-- <div class="card-img-overlay bg-secondary">
+          <!-- <div class="card-img-overlay bg-secondary">
         <img src="assets/img/mAd-Login.jpg" class="img-fluid image2" alt="" height="200" width="100">
        <img src="assets/img/hero-img1.svg" class="img-fluid image1" alt="">
       </div> -->
 
+        </div>
       </div>
-    </div>
     </div>
 
   </section><!-- End Hero -->
@@ -260,7 +296,8 @@
         </div>
 
       </div>
-    </section--><!-- End Clients Section -->
+    </section-->
+    <!-- End Clients Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg">
@@ -274,31 +311,49 @@
           </div>
           <div class="col-xl-7">
             <div class="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
-              <h3 data-aos="fade-in" data-aos-delay="100" class="about1">mAd - my Attendence daily<!--Voluptatem dignissimos provident quasi--></h3>
+              <h3 data-aos="fade-in" data-aos-delay="100" class="about1">mAd - my Attendence daily
+                <!--Voluptatem dignissimos provident quasi-->
+              </h3>
               <p data-aos="fade-in" class="about2">
-                mAd is a free, easy-to-use application to manage your Staff Attendance with employee tracking and time clock app with working hours... 
+                mAd is a free, easy-to-use application to manage your Staff Attendance with employee tracking and time
+                clock app with working hours...
                 <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit -->
               </p>
               <div class="row gy-4 mt-3">
                 <div class="col-md-6 icon-box" data-aos="fade-up">
                   <i class="bx bx-receipt"></i>
-                  <h4><a href="#" class="about3">Registration<!--Corporis voluptates sit--></a></h4>
-                  <p class="about4">Employee/User have to first register himself on it<!--Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip--></p>
+                  <h4><a href="#" class="about3">Registration
+                      <!--Corporis voluptates sit-->
+                    </a></h4>
+                  <p class="about4">Employee/User have to first register himself on it
+                    <!--Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip-->
+                  </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-cube-alt"></i>
-                  <h4><a href="#" class="about5">Statistics<!--Ullamco laboris nisi--></a></h4>
-                  <p class="about6">Statistics is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.<!--Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt--></p>
+                  <h4><a href="#" class="about5">Statistics
+                      <!--Ullamco laboris nisi-->
+                    </a></h4>
+                  <p class="about6">Statistics is the discipline that concerns the collection, organization, analysis,
+                    interpretation, and presentation of data.
+                    <!--Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt-->
+                  </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-images"></i>
-                  <h4><a href="#" class="about7">Users List<!--Labore consequatur--></a></h4>
-                  <p class="about8">This method returns a list of all users in the workspace. This includes deleted/deactivated users.<!--Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere--></p>
+                  <h4><a href="#" class="about7">Users List
+                      <!--Labore consequatur-->
+                    </a></h4>
+                  <p class="about8">This method returns a list of all users in the workspace. This includes
+                    deleted/deactivated users.
+                    <!--Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere-->
+                  </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-shield"></i>
                   <h4><a href="#" class="about9">User Safety</a></h4>
-                  <p class="about10">All user data is safe. None of the data is used/ shared among any third party links.</p>
+                  <p class="about10">All user data is safe. None of the data is used/ shared among any third party
+                    links.</p>
                 </div>
               </div>
             </div><!-- End .content-->
@@ -370,20 +425,25 @@
         </div>
 
       </div>
-    </section!--><!-- End Services Section -->
+    </section!-->
+    <!-- End Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in" class="features">Features</h2>
-          <p data-aos="fade-in" class="features1">Manage employee leave & attendance at one place with our free software.Keep a tab on employees working outside the office with geotracking and geofencing.Mobile based attendance software for Contractual and Distributed staff<!--Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.--></p>
+          <h2 data-aos="fade-in" class="feat">Features</h2>
+          <p data-aos="fade-in" class="features1">Manage employee leave & attendance at one place with our free
+            software.Keep a tab on employees working outside the office with geotracking and geofencing.Mobile based
+            attendance software for Contractual and Distributed staff
+            <!--Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.-->
+          </p>
         </div>
 
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right">
-            <img src="assets/img/f1.svg" class="img-fluid" alt=""> 
+            <img src="assets/img/f1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left">
             <!--h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3-->
@@ -396,8 +456,10 @@
             <ul>
               <!--li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li-->
-                <li><i class="features4 bi bi-check"></i>In 'Trail', user will get 30 days Trail activated on the application.</li>
-                <li><i class="features5 bi bi-check"></i>with 'Premium', user will get to experience all features Hands-on.</li>
+              <li class="features4"><i class="bi bi-check"></i>In 'Trail', user will get 30 days Trail activated on the
+                application.</li>
+              <li class="features5"><i class="bi bi-check"></i>with 'Premium', user will get to experience all features
+                Hands-on.</li>
             </ul>
           </div>
         </div>
@@ -407,9 +469,13 @@
             <img src="assets/img/f2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3 class="features6"><!--Corporis temporibus maiores provident-->Records</h3>
+            <h3 class="features6">
+              <!--Corporis temporibus maiores provident-->Records
+            </h3>
             <p class="features7 fst-italic">
-              a record of how often someone has been present somewhere, for example at work: good/poor attendance record Do not underestimate the importance of having a good attendance record. It is one of the performance indicators that managers look at first.
+              a record of how often someone has been present somewhere, for example at work: good/poor attendance record
+              Do not underestimate the importance of having a good attendance record. It is one of the performance
+              indicators that managers look at first.
               <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. -->
             </p>
@@ -426,13 +492,29 @@
             <img src="assets/img/f3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
-            <h3 class="features8">Profile<!--Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas--></h3>
-            <p class="features9">After you select Attendance from the Standard Profiles landing page, the Attendance Profiles list page opens. This page is a grid that displays the current Attendance Profiles and the attributes of each profile. To modify the attribute headings, click  and select or clear the listed options.
-              <!--Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.--></p>
-           <ul>
-              <li><i class="features10 bi bi-check"></i> To create an Attendance Profile, click Add .<!--Ullamco laboris nisi ut aliquip ex ea commodo consequat.--></li>
-              <li><i class="features11 bi bi-check"></i> To edit an Attendance Profile, select a profile from the list and click Edit.<!--Duis aute irure dolor in reprehenderit in voluptate velit.--></li>
-              <li><i class="features12 bi bi-check"></i> To export the list page to an Excel .csv file, click Export  , then select the .csv link at the bottom of the page.<!--Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.--></li>
+            <h3 class="features8">Profile
+              <!--Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas-->
+            </h3>
+            <p class="features9">After you select Attendance from the Standard Profiles landing page, the Attendance
+              Profiles list page opens. This page is a grid that displays the current Attendance Profiles and the
+              attributes of each profile. To modify the attribute headings, click and select or clear the listed
+              options.
+              <!--Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.-->
+            </p>
+            <ul>
+              <li class="features10"><i class="bi bi-check"></i> To create an Attendance Profile, click Add .
+                <!--Ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+              </li>
+              <li class=" features11"><i class="bi bi-check"></i> To edit an Attendance Profile, select a profile from
+                the list
+                and click Edit.
+                <!--Duis aute irure dolor in reprehenderit in voluptate velit.-->
+              </li>
+              <li class="features12"><i class="bi bi-check"></i> To export the list page to an Excel .csv file, click
+                Export ,
+                then select the .csv link at the bottom of the page.
+                <!--Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.-->
+              </li>
             </ul>
           </div>
         </div>
@@ -442,9 +524,14 @@
             <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3 class="features13">Mark Attendence<!--Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in--></Quas></h3>
+            <h3 class="features13">Mark Attendence
+              <!--Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in-->
+              </Quas>
+            </h3>
             <p class="features14 fst-italic">
-              Real-Time Field Force Tracking, Simplified Data Management, Easy to Create & View Reports. Meet Your Company's Attendance Requirements with the Best Attendance Management Software. Easy Report Management. Expense Reimbursement.
+              Real-Time Field Force Tracking, Simplified Data Management, Easy to Create & View Reports. Meet Your
+              Company's Attendance Requirements with the Best Attendance Management Software. Easy Report Management.
+              Expense Reimbursement.
               <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. -->
             </p>
@@ -610,7 +697,8 @@
         </div>
 
       </div>
-    </section--><!-- End Portfolio Section -->
+    </section-->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <!--section id="team" class="team section-bg">
@@ -680,7 +768,8 @@
         </div>
 
       </div>
-    </section--><!-- End Team Section -->
+    </section-->
+    <!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
     <!--section id="pricing" class="pricing section-bg">
@@ -736,7 +825,8 @@
         </div>
 
       </div>
-    </section--><!-- End Pricing Section -->
+    </section-->
+    <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <!--section id="faq" class="faq section-bg">
@@ -759,7 +849,7 @@
           </div>
         </div><!-- End F.A.Q Item-->
 
-        <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+    <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="bx bx-help-circle"></i>
             <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
@@ -769,9 +859,10 @@
               Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
             </p>
           </div>
-        </div--><!-- End F.A.Q Item-->
+        </div-->
+    <!-- End F.A.Q Item-->
 
-        <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+    <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="bx bx-help-circle"></i>
             <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
@@ -781,9 +872,10 @@
               Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
             </p>
           </div>
-        </div--><!-- End F.A.Q Item-->
+        </div-->
+    <!-- End F.A.Q Item-->
 
-        <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+    <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5">
             <i class="bx bx-help-circle"></i>
             <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
@@ -793,9 +885,10 @@
               Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
             </p>
           </div>
-        </div--><!-- End F.A.Q Item-->
+        </div-->
+    <!-- End F.A.Q Item-->
 
-        <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+    <!--div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="col-lg-5">
             <i class="bx bx-help-circle"></i>
             <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
@@ -807,15 +900,16 @@
           </div>
         </div><!-- End F.A.Q Item-->
 
-      <!--/div>
-    </section--><!-- End Frequently Asked Questions Section -->
+    <!--/div>
+    </section-->
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 class="contact">Contact</h2>
+          <h2 class="cont">Contact</h2>
           <h3 class="contact1">If any Queries, you can reach us on the Following...</h3>
         </div>
 
@@ -828,21 +922,25 @@
                 <div class="info-box" data-aos="fade-up">
                   <i class="bx bx-map"></i>
                   <h3 class="contact2">Our Address</h3>
-                  <p class="contact3">LT, N 1/A, 39/2, SECTOR 10, Dr B R Ambedkar Marg, Nerul West, Navi Mumbai, Maharashtra 400706</p>
+                  <p class="contact3">LT, N 1/A, 39/2, SECTOR 10, Dr B R Ambedkar Marg, Nerul West, Navi Mumbai,
+                    Maharashtra 400706</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-envelope"></i>
                   <h3 class="contact4">Email Us</h3>
-                  <p><a href="https://accounts.google.com/b/1/AddMailService" class="email" target="_blank">contact.youthtechnology@gmail.com</a></p>
+                  <p><a href="https://accounts.google.com/b/1/AddMailService" class="email"
+                      target="_blank">contact.youthtechnology@gmail.com</a></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-phone-call"></i>
                   <h3 class="contact5">Call Us</h3>
-                  <p>+91 8080 2277 27<!--br>+1 6678 254445 41--></p>
+                  <p>+91 8080 2277 27
+                    <!--br>+1 6678 254445 41-->
+                  </p>
                 </div>
               </div>
             </div>
@@ -853,17 +951,21 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100" data-aos="fade-up">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="contact6 form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="contact6 form-control" id="name" placeholder="Your Name"
+                    required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="contact7 form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="contact7 form-control" name="email" id="email" placeholder="Your Email"
+                    required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="contact8 form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="contact8 form-control" name="subject" id="subject" placeholder="Subject"
+                  required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="contact9 form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="contact9 form-control" name="message" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -877,7 +979,10 @@
         </div>
 
         <div class="map mt-3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15086.432135977399!2d73.0178017!3d19.0369861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x310b156759317e3c!2sI%20pvt.%20ltd.!5e0!3m2!1sen!2sin!4v1655463222344!5m2!1sen!2sin" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15086.432135977399!2d73.0178017!3d19.0369861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x310b156759317e3c!2sI%20pvt.%20ltd.!5e0!3m2!1sen!2sin!4v1655463222344!5m2!1sen!2sin"
+            width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </div>
@@ -891,20 +996,21 @@
     <div class="footer-top">
 
       <div class="container">
-        
+
         <div class="row  justify-content-center">
           <div class="col-lg-6">
             <!--h3>mAd</h3-->
             <img src="assets/img/madicon.png" class="img-fluid" alt="" height="200" width="200">
             <h3 class="footer1 pt-3" style="font-family: times new roman;">my Attendence daily</h3>
-           <!--p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p-->
+            <!--p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p-->
           </div>
         </div>
 
         <div class="row footer-newsletter justify-content-center">
           <div class="col-lg-6">
             <form action="" method="post">
-              <input class="footer3" type="email" name="email" placeholder="Enter your Email"><input class="footer4" type="submit" value="Subscribe">
+              <input class="footer3" type="email" name="email" placeholder="Enter your Email"><input class="footer4"
+                type="submit" value="Subscribe">
             </form>
           </div>
         </div>
@@ -934,8 +1040,11 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+  </div>
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -947,41 +1056,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/translate.js"></script>
-  <script src="assets/js/script.js"></script>
+  <!-- <script src="assets/js/translate.js"></script>
+  <script src="assets/js/script.js"></script> -->
 
-  <!-- <script>
-		const langEl = document.querySelector('.langwrap');
-		const select = document.querySelectorAll('.select');
-		const navbarEl = document.querySelector('.navbar');
-    // const getstartedEl = document.querySelector('.getstarted');
-		// const heroEl = document.querySelector('.hero');
-		// const aboutEl = document.querySelector('.about');
-		// const featuresEl = document.querySelector('.features');
-		// const contactEl = document.querySelector('.contact');
-		// const footerEl = document.querySelector('.footer');
-		// const descrEl = document.querySelector('.description');
+</body>
 
-    console.log(select)
-
-		select.forEach(el => {
-			el.addEventListener('click', () => {
-				langEl.querySelector('.active').classList.remove('active');
-				el.classList.add('active');
-
-				const attr = el.getAttribute('language');
-
-				navbarEl.textContent = data[attr].navbar;
-        // getstartedEl.textContent = data[attr].getstarted;
-				// heroEl.textContent = data[attr].hero;
-				// aboutEl.textContent = data[attr].about;
-				// featuresEl.textContent = data[attr].features;
-				// contactEl.textContent = data[attr].contact;
-				// footerEl.textContent = data[attr].footer;
-				// descrEl.textContent = data[attr].description;
-			});
-		});
-</script> -->
-
-  </body>
 </html>

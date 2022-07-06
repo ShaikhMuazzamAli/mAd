@@ -39,6 +39,10 @@
 
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('a');
+
+// const appTitle = document.querySelector('.appTitle');
+// const appDesc = document.querySelector('.appDesc');
+
 const navbar1El = document.querySelector('.navbar1');
 const navbar2El = document.querySelector('.navbar2');
 const navbar3El = document.querySelector('.navbar3');
@@ -57,7 +61,7 @@ const about7El = document.querySelector('.about7');
 const about8El = document.querySelector('.about8');
 const about9El = document.querySelector('.about9');
 const about10El = document.querySelector('.about10');
-const featuresEl = document.querySelector('.features');
+const featEl = document.querySelector('.feat');
 const features1El = document.querySelector('.features1');
 const features2El = document.querySelector('.features2');
 const features3El = document.querySelector('.features3');
@@ -72,28 +76,33 @@ const features11El = document.querySelector('.features11');
 const features12El = document.querySelector('.features12');
 const features13El = document.querySelector('.features13');
 const features14El = document.querySelector('.features14');
-const contactEl = document.querySelector('.contact');
+const contEl = document.querySelector('.cont');
 const contact1El = document.querySelector('.contact1');
 const contact2El = document.querySelector('.contact2');
 const contact3El = document.querySelector('.contact3');
 const contact4El = document.querySelector('.contact4');
 const contact5El = document.querySelector('.contact5');
-const contact6El = document.querySelector('.contact6');
-const contact7El = document.querySelector('.contact7');
-const contact8El = document.querySelector('.contact8');
-const contact9El = document.querySelector('.contact9');
-const contact10El = document.querySelector('.contact10');
+// const contact6El = document.querySelector('.contact6');
+// const contact7El = document.querySelector('.contact7');
+// const contact8El = document.querySelector('.contact8');
+// const contact9El = document.querySelector('.contact9');
+// const contact10El = document.querySelector('.contact10');
 const footer1El = document.querySelector('.footer1');
 const footer2El = document.querySelector('.footer2');
-const footer3El = document.querySelector('.footer3');
-const footer4El = document.querySelector('.footer4');
+// const footer3El = document.querySelector('.footer3');
+// const footer4El = document.querySelector('.footer4');
 
 link.forEach(el => {
     el.addEventListener('click', () => {
         langEl.querySelector('.active').classList.remove('active');
         el.classList.add('active');
+        console.log(el);
 
         const attr = el.getAttribute('language');
+        console.log(attr);
+
+        // appTitle.textContent = data[attr].appTitle;
+        // appDesc.textContent = data[attr].appDesc;
 
         navbar1El.textContent = data[attr].navbar1;
         navbar2El.textContent = data[attr].navbar2;
@@ -113,7 +122,7 @@ link.forEach(el => {
         about8El.textContent = data[attr].about8;
         about9El.textContent = data[attr].about9;
         about10El.textContent = data[attr].about10;
-        featuresEl.textContent = data[attr].features;
+        featEl.textContent = data[attr].feat;
         features1El.textContent = data[attr].features1;
         features2El.textContent = data[attr].features2;
         features3El.textContent = data[attr].features3;
@@ -128,20 +137,20 @@ link.forEach(el => {
         features12El.textContent = data[attr].features12;
         features13El.textContent = data[attr].features13;
         features14El.textContent = data[attr].features14;
-        contactEl.textContent = data[attr].contact;
+        contEl.textContent = data[attr].cont;
         contact1El.textContent = data[attr].contact1;
         contact2El.textContent = data[attr].contact2;
         contact3El.textContent = data[attr].contact3;
         contact4El.textContent = data[attr].contact4;
         contact5El.textContent = data[attr].contact5;
-        contact6El.textContent = data[attr].contact6;
-        contact7El.textContent = data[attr].contact7;
-        contact8El.textContent = data[attr].contact8;
-        contact9El.textContent = data[attr].contact9;
-        contact10El.textContent = data[attr].contact10;
+        // contact6El.textContent = data[attr].contact6;
+        // contact7El.textContent = data[attr].contact7;
+        // contact8El.textContent = data[attr].contact8;
+        // contact9El.textContent = data[attr].contact9;
+        // contact10El.textContent = data[attr].contact10;
         footer1El.textContent = data[attr].footer1;
         footer2El.textContent = data[attr].footer2;
-        footer3El.textContent = data[attr].footer3;
-        footer4El.textContent = data[attr].footer4;
+        // footer3El.textContent = data[attr].footer3;
+        // footer4El.textContent = data[attr].footer4;
     });
 });
