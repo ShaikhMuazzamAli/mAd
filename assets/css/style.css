@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #fdd067;
+  color: #074ada;
   text-decoration: none;
 }
 
@@ -115,9 +115,13 @@ body.night a {
 .switch {
   font-size: 25px;
   color: #fff;
-  position: absolute;
-  top: 6px;
-  right: -20px;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px; */
+  top: -0px;
+  right: -25px;
   cursor: pointer;
 }
 body.night .getstarted {
@@ -125,6 +129,14 @@ body.night .getstarted {
 }
 .btn {
   background: #213b52;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 5px 5px 5px 5px;
+  top: 0px;
+  right: -30px;
+  font-size: 14px;
 }
 body.night .btn {
   background-color: #00151f;
@@ -135,10 +147,18 @@ body.night .btn {
 body.night .dropdown-menu {
   background-color: #00151f;
 }
-.dropdown-menu a:hover {
-  color: #18d26e;
-  text-decoration: none;
+.dropdown:hover .btn {
+  background-color: unset !important;
+  border-color: unset !important;
+  box-shadow: unset !important;
 }
+.dropdown-menu a:hover {
+  background-color: #616161;
+}
+/* .dropdown-item:hover {
+  display: block;
+  text-decoration: none;
+ } */
 /* body.night .langWrap {
   background-color: #00151f;
 }
@@ -210,7 +230,17 @@ body.night .dropdown-menu {
     cursor: pointer;
   } 
 }
-
+/* .btn {
+  background: #213b52;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2px 0px 2px;
+  top: -18px;
+  right: 70px;
+  font-size: 12px;
+} */
 /* @media screen and (max-width: 828px) {
   /* [data-aos-delay] {
     transition-delay: 0 !important;
@@ -272,6 +302,19 @@ body.night .dropdown-menu {
     right: 20px;
     cursor: pointer;
   }
+
+  /* .btn {
+    background: #213b52;
+    position: relative; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* padding: 5px 5px 5px 5px;
+    top: 0px;
+    right: -30px;
+    font-size: 14px;
+    display: none;
+  } */
 }
 /*--------------------------------------------------------------
 # Header

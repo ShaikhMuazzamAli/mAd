@@ -94,16 +94,24 @@ const footer2El = document.querySelector('.footer2');
 
 link.forEach(el => {
     el.addEventListener('click', () => {
-        langEl.querySelector('.active').classList.remove('active');
-        el.classList.add('active');
+        // langEl.querySelector('.active').classList.remove('active');
+        // el.classList.add('active');
         console.log(el);
 
         const attr = el.getAttribute('language');
         console.log(attr);
 
+        if(attr!=null)
+        {
+            langEl.querySelector('.active').classList.remove('active');
+            el.classList.add('active');  
+        }
+
         // appTitle.textContent = data[attr].appTitle;
         // appDesc.textContent = data[attr].appDesc;
 
+    if(attr!=null)
+    {    
         navbar1El.textContent = data[attr].navbar1;
         navbar2El.textContent = data[attr].navbar2;
         navbar3El.textContent = data[attr].navbar3;
@@ -152,5 +160,6 @@ link.forEach(el => {
         footer2El.textContent = data[attr].footer2;
         // footer3El.textContent = data[attr].footer3;
         // footer4El.textContent = data[attr].footer4;
+    }
     });
 });
